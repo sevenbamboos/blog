@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on sevenbamboos&#39;s blog</title>
+    <link>http://sevenbamboos.github.io/blog/tags/programming/</link>
+    <description>Recent content in Programming on sevenbamboos&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>sevenbamboos@gmail.com, 13472650881@163.com (YuPing Wang)</managingEditor>
+    <webMaster>sevenbamboos@gmail.com, 13472650881@163.com (YuPing Wang)</webMaster>
+    <copyright>(c) 2016 YuPing Wang.</copyright>
+    <lastBuildDate>Wed, 01 Jun 2016 14:22:09 +0800</lastBuildDate>
+    <atom:link href="http://sevenbamboos.github.io/blog/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Git</title>
+      <link>http://sevenbamboos.github.io/blog/2016/06/01/git/</link>
+      <pubDate>Wed, 01 Jun 2016 14:22:09 +0800</pubDate>
+      <author>sevenbamboos@gmail.com, 13472650881@163.com (YuPing Wang)</author>
+      <guid>http://sevenbamboos.github.io/blog/2016/06/01/git/</guid>
+      <description>
+
+&lt;h1 id=&#34;git:1c1ef82aae62aeea8eedcb5f455b129b&#34;&gt;Git&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;reference &lt;a href=&#34;http://www.jianshu.com/p/6d1ce5b65523&#34;&gt;http://www.jianshu.com/p/6d1ce5b65523&lt;/a&gt; and &lt;a href=&#34;http://learngitbranching.js.org/?demo&#34;&gt;http://learngitbranching.js.org/?demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Install &lt;a href=&#34;http://cmder.net/&#34;&gt;http://cmder.net/&lt;/a&gt; (including MsysGit)&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Config&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git config --global user.name &amp;quot;xxx&amp;quot; 
+git config --global user.email &amp;quot;xxx@yyy&amp;quot;
+git config --global alias.st status
+git config --global alias.co checkout
+git config --global alias.ci commit
+git config --global alias.br branch
+git config --list //~\.gitconfig
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Check in&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git init
+git status
+git add .
+git commit -m &amp;quot;xxx&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Revert&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git reflog //review commit id for revert
+git reset --hard xxx //commit id or HEAD^ (the next version), HEAD^^ (the next next version)
+git checkout -- filename //revert when there is no local change **added**
+git reset HEAD filename &amp;amp;&amp;amp; git checkout -- filename //revert **added** change, then revert local change
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Change&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git rm xxx
+git mv xxx yyy
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Branch&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git checkout -b xxx // git branch xxx &amp;amp;&amp;amp; git checkout xxx
+git merge xxx
+git branch -d xxx //delete branch
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;gitignore when it doesn&amp;rsquo;t work:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git rm -r --cached .
+git add .
+git commit -m &#39;update .gitignore&#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;github:1c1ef82aae62aeea8eedcb5f455b129b&#34;&gt;Github&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Generate SSH key&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ssh-keygen -t rsa -C&amp;quot;mail&amp;quot; //id_rsa and id_rsa.pub
+ssh -T github.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;.ssh/config&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Host github.com
+User git
+Hostname ssh.github.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_rsa
+Port 443
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Upload&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git remote add origin git@github.com:sevenbamboos/test.git
+git push origin master
+git pull origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
