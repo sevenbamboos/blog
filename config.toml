@@ -1,0 +1,17 @@
+baseurl = "http://sevenbamboos.github.io/blog"
+publishdir = "public"
+languageCode = "en-us"
+title = "sevenbamboos's blog"
+theme = "hugo-bootstrap"
+copyright = "(c) 2016 YuPing Wang."
+paginate = 5 
+paginatePath = "page"
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+    code = "/:slug/"
+
+[author]
+    name = "YuPing Wang"
+    email = "sevenbamboos@gmail.com, 13472650881@163.com"
+
