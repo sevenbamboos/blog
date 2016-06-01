@@ -1,4 +1,4 @@
-baseurl = "http://sevenbamboos.github.io/blog"
+baseurl = "http://sevenbamboos.github.io/blog-site"
 publishdir = "public"
 languageCode = "en-us"
 title = "sevenbamboos's blog"
@@ -6,6 +6,7 @@ theme = "hugo-bootstrap"
 copyright = "(c) 2016 YuPing Wang."
 paginate = 5 
 paginatePath = "page"
+canonifyurls = true
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
