@@ -42,6 +42,8 @@ git reset HEAD filename && git checkout -- filename //revert **added** change, t
 * Change
 ```
 git rm xxx
+git rm --cache xxx // remove tracked file, but keep it locally
+git rm -f xxx // remove file physically.
 git mv xxx yyy
 ```
 

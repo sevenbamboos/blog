@@ -3,7 +3,7 @@ author = "YuPing Wang"
 date = "2016-06-01T16:05:27+08:00"
 description = "publish static web pages on Github"
 draft = false
-tags = ["git-hub", "writing"]
+tags = ["git-hub"] 
 title = "How to build personal blog via Github Pages"
 type = "post"
 
