@@ -3,7 +3,7 @@ author = "YuPing Wang"
 date = "2016-06-01T14:22:09+08:00"
 description = "git commands memo"
 draft = false
-tags = ["programming", "version control"]
+tags = ["version control"]
 title = "Git"
 type = "post"
 

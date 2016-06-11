@@ -16,3 +16,7 @@ canonifyurls = true
     name = "YuPing Wang"
     email = "sevenbamboos@gmail.com, 13472650881@163.com"
 
+[params]	
+	highlight = "zenburn"
+	footline = "Those failed to kill me make me stronger."
+	showRightSidebar = true
