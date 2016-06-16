@@ -63,6 +63,7 @@ git push origin gh-pages
 // go to an empty folder
 git init
 git pull git@github.com:xxx/blog.git
+git remote add git@github.com:xxx/blog.git
 
 cd themes
 // find other themes at https://github.com/spf13/hugoThemes
@@ -71,6 +72,9 @@ git clone git@github.com:mmrath/hugo-bootstrap.git
 // switch back to ../public folder
 git init
 git pull git@github.com:xxx/blog-site.git
+git remote add git@github.com:xxx/blog.git
+git fetch
+git co gh-pages
 
 cd ..
 hugo
