@@ -58,3 +58,20 @@ git push origin gh-pages
 ``` 
 [**XXX**] How to simplify the preceding commands? When following the Hugo's official document withe "git subtree" stuff, there is non-fast-forward error in my console!
 
+# Checkout and rebuild (somewhere else)
+```
+// go to an empty folder
+git init
+git pull git@github.com:xxx/blog.git
+
+cd themes
+// find other themes at https://github.com/spf13/hugoThemes
+git clone git@github.com:mmrath/hugo-bootstrap.git
+
+// switch back to ../public folder
+git init
+git pull git@github.com:xxx/blog-site.git
+
+cd ..
+hugo
+```
