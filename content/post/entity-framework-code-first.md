@@ -179,7 +179,7 @@ modelBuilder.Entity<Study>()
 ``` 
 
 Notice that for required navigating property, the generated foreign keys will be marked as **ON DELETE CASCADE**: 
-![table-study](/post/img/table-study.png)
+![table-study](/content/post/img/table-study.png)
 
 Also notice that during saving a study to an order, both of the following ways is working:
 ```
